@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --dark-bg: #0a0a0a;
+  --darker-bg: #050505;
+  --card-bg: #151515;
+  --accent-color: #6f42c1;
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --success-color: #198754;
+  --icon-color: #4fc3f7;
+  --danger-color: #dc3545;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--text-primary);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* Estilos personalizados */
+.card-modern {
+  background-color: var(--card-bg);
+  border: 1px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-modern:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.6);
+}
+
+.btn-primary-custom {
+  background-color: var(--icon-color);
+  border-color: var(--icon-color);
+  color: #000;
+  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 15px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: #29b6f6;
+  border-color: #29b6f6;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.navbar-custom {
+  background: linear-gradient(135deg, var(--darker-bg) 0%, #1a1a1a 100%);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #333;
+  padding: 15px 0;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.logo-text {
+  font-weight: 700;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, var(--icon-color), #6f42c1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Asegurar que el body tenga el fondo oscuro */
+body {
+  background-color: #0a0a0a;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
