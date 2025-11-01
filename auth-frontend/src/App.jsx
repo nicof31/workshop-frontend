@@ -53,6 +53,7 @@ function AppContent() {
     return <Register />;
   }
   
+  
   if (currentPath.includes('/dashboard')) {
     return isAuthenticated ? <Dashboard /> : <Login />;
   }
